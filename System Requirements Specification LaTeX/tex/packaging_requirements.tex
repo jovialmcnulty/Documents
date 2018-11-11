@@ -1,0 +1,51 @@
+% Added by Sammy
+The UR5 Jenga-Playing Robot's software will be delivered via download and the software packages used will be downloaded through a package manager. Different software packages will be used to create the UR5 Jenga-Playing Robot. Python will be used for programming the UR5 Jenga-Playing Robot, using the software packages OpenCV and ROS. OpenCV will be utilized in Python for all computer vision, 2D or 3D, tasks the Robot will use to play Jenga. ROS will be used for all communication with the UR5 Robot Arm; it will act as a middle-ware to control the robots components. 
+
+% Added by Sammy
+\subsection{Software Packaging: OpenCV 3.4.3}
+\subsubsection{Description}
+The system will use computer vision to successfully play Jenga. Using the open source software package OpenCV, the system will be able to utilize computer vision. The installation will be done through a package manager. 
+\subsubsection{Source}
+https://opencv.org/
+\subsubsection{Constraints}
+There is weak documentation regarding OpenCV with Python, making a constraint in learning how to use the technology. Pythons run-time with OpenCV is proven to be slower than with C++, making a constraint on how fast our program can run. OpenCV is written in C++, so any changes to OpenCV itself must be done in C++ and not Python making a constraint on how customized our computer vision system can be. 
+\subsubsection{Standards}
+https://opencv.org/platforms/
+https://opencv.org/about.html
+\subsubsection{Priority}
+Critical
+
+% Added by Joe
+\subsection{Software Packaging: ROS}
+\subsubsection{Description}
+As the software largely depends on the ROS ecosystem, software installation and configuration shall be consistent with ROS conventions. i.e. custom software shall be written as a Catkin package which in turn manages dependencies.
+\subsubsection{Source}
+%TODO: Make there references and cite and discuss
+https://wiki.ros.org/Packages
+
+\subsubsection{Constraints}
+Modularity in implementation is desirable, meaning, the project should be decomposed such that software not included in a package either as methods or dependencies is not needed at runtime, though may enable complementary functionality if present.
+\subsubsection{Standards}
+ROS Standards can be found in the ROS Enhancement Proposals (REP) \\
+REP-0136: http://www.ros.org/reps/rep-0136.html \\
+REP-0144: http://www.ros.org/reps/rep-0144.html\\
+REP-0149: http://www.ros.org/reps/rep-0149.html
+
+\subsubsection{Priority}
+High
+
+\subsection{Software Packaging: Python}
+\subsubsection{Description}
+As individual methods and topics will be based in Python, it is important to follow Python conventions and packaging where possible. 
+\subsubsection{Source}
+%TODO: Make there references and cite and discuss
+
+\subsubsection{Constraints}
+A strict Python style guide shall be adhered to (refer to Standards) to improve maintainability, readability, and support cross-compatibility with Python 3 to ease porting to new versions of ROS.
+\subsubsection{Standards}
+ROS Standards can be found in the ROS Enhancement Proposals (REP) \\
+Additional Python requirements can be found in the references \\
+REP-0008: http://www.ros.org/reps/rep-0008.html
+
+\subsubsection{Priority}
+Critical

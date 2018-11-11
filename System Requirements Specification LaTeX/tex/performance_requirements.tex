@@ -1,0 +1,27 @@
+%Added by Gabe
+Since the UR5 Jenga-Playing Robot is intended for live demonstrations, performance requirements related to the game-playing ability of the final product are very important. Our goal of inspiring users to pursue the field of Engineering requires that the UR5 Jenga-Playing Robot provide an exciting display that will hold the users attention.
+
+
+\subsection{Minimum Rounds per Game Against Self}
+\subsubsection{Description}
+In order to ensure that the UR5 Jenga-Playing Robot can play games for long enough to stay interesting for users, the UR5 Jenga-Playing Robot shall be able to play against itself for no fewer than 10 turns. Since user skill levels may vary greatly, the performance of the UR5 Jenga-Playing Robot playing turns against itself should provide more consistent and reliable feedback regarding its block-pulling abilities.
+\subsubsection{Source}
+Gabriel Comer%it says we can use 'specified team member by name', so I just put my name
+\subsubsection{Constraints}
+The UR5 Jenga-Playing Robot's performance will be effected be abnormal changes in tower state, such as twisting, shifting, and leaning, occurring at different levels within the tower. In order to maximize the number of turns the UR5 Jenga-Playing Robot can play against itself, these tower states will either have to be accounted for while choosing which block to pull, or its block-pulling technique will have to be good enough to remove blocks from the tower without dramatically effecting the balance of the tower.
+\subsubsection{Standards}
+N/A
+\subsubsection{Priority}
+High
+
+\subsection{Time Limit for Turns}
+\subsubsection{Description}
+The UR5 Jenga-Playing Robot shall take no longer than 60 seconds for each of its turns. This ensures that users will be able to maintain interest during the down-time between their own turns. It also ensures that any line to play against the UR5 Jenga-Playing Robot in action at a demonstration will move at a steady pace.
+\subsubsection{Source}
+Gabriel Comer%it says we can use 'specified team member by name', so I just put my name
+\subsubsection{Constraints}
+Our ability to meet this requirement depends on the speed at which the UR5 Jenga-Playing Robot is able to rotate around the tower and develop a scan of the tower's state. If we move the arm too quickly, it may not obtain reliable vision data from its visual sensors. Furthermore, quickly swinging the arm around the tower may present a safety risk to the user standing nearby, waiting for the UR5 Jenga-Playing Robot's turn to finish. Then, the time it takes for the UR5 Jenga-Playing Robot to pull a block will effect similarly effect the turn time. We can not pull blocks to fast, as it will destabilize the tower. But moving to slowly will be boring for the users.
+\subsubsection{Standards}
+N/A
+\subsubsection{Priority}
+Medium
